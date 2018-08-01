@@ -14,7 +14,37 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
 }
 
-var randomInt = getRandomInt(1, 100);
+var randomInt = getRandomInt(1, 10);
+var i = parseInt(prompt("make a guess"));
+var a=0;
+
+while (!(i == randomInt)){
+	if (i > randomInt || i<randomInt) {
+		document.write("try again!");
+		var i = parseInt(prompt("make a guess"));
+		a++;
+	}
+		else{
+			document.write(a);
+
+
+		}
+	
+	}
+document.write(i);
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* END STARTING CODE */
 
 // your code goes under here

@@ -15,7 +15,21 @@ function isLetter(char) {
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
 
-// Write your isPalindrome function here!
+
+function isPalindrome(word){
+	var x = word.split("");
+	var wordcopy = word
+	var worde = x.reverse().join("");
+	if (wordcopy == worde ) {
+		document.write("true");
+	}
+
+
+
+
+}
+isPalindrome("dade");
+
 
     </script>
 </body>
